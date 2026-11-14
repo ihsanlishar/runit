@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RunIt — Reset Password</title>
+  </head>
+  <body>
+    <main>
+      <h1>RunIt 🏀</h1>
+      <p>No organizer. Just play.</p>
+
+      <section id="reset-form" hidden>
+        <h2>Create a new password</h2>
+        <form id="password-form">
+          <input
+            id="password"
+            type="password"
+            placeholder="New password"
+            autocomplete="new-password"
+            minlength="8"
+            required
+          />
+          <input
+            id="confirm"
+            type="password"
+            placeholder="Confirm new password"
+            autocomplete="new-password"
+            minlength="8"
+            required
+          />
+          <button type="submit">Update Password</button>
+        </form>
+      </section>
+
+      <p id="message">Verifying your recovery link...</p>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
