@@ -122,8 +122,11 @@ export default function App() {
 
     try {
       const { error } = await supabase.auth.resetPasswordForEmail(
-        email.trim().toLowerCase()
-      );
+        email.trim().toLowerCase(),
+      {
+        redirectTo: 'https://runit-six.vercel.app',
+      }
+    );
 
       if (error) throw error;
 
